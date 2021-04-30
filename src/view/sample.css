@@ -28,7 +28,7 @@
 }
 
 #needButton{
-    -fx-background-image: url("../images/raisehand.png");
+    -fx-background-image: url("../model/images/raisehand.png");
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
@@ -38,28 +38,28 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../images/person.png");
+    -fx-background-image: url("../model/images/person.png");
 }
 
 #giveButton{
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../images/shoppingCart.png");
+    -fx-background-image: url("../model/images/shoppingCart.png");
 }
 
 #amountButton{
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../images/counter.png");
+    -fx-background-image: url("../model/images/counter.png");
 }
 
 #submit{
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../images/submit.png");
+    -fx-background-image: url("../model/images/submit.png");
 }
 
 #home {
@@ -67,7 +67,7 @@
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     /*-fx-background-color: transparent;*/
-    -fx-background-image: url("../images/home.png");
+    -fx-background-image: url("../model/images/home.png");
 }
 
 #inventory {
@@ -75,7 +75,7 @@
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     /*-fx-background-color: transparent;*/
-    -fx-background-image: url("../images/inventory.png");
+    -fx-background-image: url("../model/images/inventory.png");
 }
 
 #addButton {
@@ -83,7 +83,7 @@
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     /*-fx-background-color: transparent;*/
-    -fx-background-image: url("../images/add.png");
+    -fx-background-image: url("../model/images/add.png");
 }
 
 #subtractButton {
@@ -91,5 +91,5 @@
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     /*-fx-background-color: transparent;*/
-    -fx-background-image: url("../images/subtract.png");
+    -fx-background-image: url("../model/images/subtract.png");
 }

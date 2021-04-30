@@ -1,4 +1,4 @@
-package sample;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class MainController {
 
     public void switchSceneToLogin(ActionEvent event) throws IOException {
 
-        mainPane = FXMLLoader.load(getClass().getResource("login.fxml"));
+        mainPane = FXMLLoader.load(getClass().getResource("../view/login.fxml"));
         Scene scene = new Scene(mainPane);
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -31,7 +31,7 @@ public class MainController {
     }
     public void switchSceneToSignUp(ActionEvent event) throws IOException {
 
-        mainPane = FXMLLoader.load(getClass().getResource("signup.fxml"));
+        mainPane = FXMLLoader.load(getClass().getResource("../view/signup.fxml"));
         Scene scene = new Scene(mainPane);
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -42,7 +42,7 @@ public class MainController {
 //        System.out.print("TESTING");
 //        getScene().setRoot();
 
-        mainPane = FXMLLoader.load(getClass().getResource("songsPage.fxml"));
+        mainPane = FXMLLoader.load(getClass().getResource("../view/songsPage.fxml"));
         Scene scene = new Scene(mainPane);
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);

@@ -1,4 +1,4 @@
-package sample;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -42,7 +42,7 @@ public class songsPageController<e> {
 //        System.out.print("TESTING");
 //        getScene().setRoot();
 
-        mainPane = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        mainPane = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
         Scene scene = new Scene(mainPane);
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
