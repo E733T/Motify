@@ -4,16 +4,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="650.0" prefWidth="918.0" stylesheets="/view/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane prefHeight="727.0" prefWidth="1045.0" stylesheets="/view/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <Pane prefHeight="114.0" prefWidth="918.0">
+      <Pane prefHeight="114.0" prefWidth="1045.0">
          <children>
-            <Label alignment="CENTER" layoutX="194.0" layoutY="8.0" prefHeight="99.0" prefWidth="531.0" text="Motify" textFill="#1db954">
+            <Label alignment="CENTER" layoutX="257.0" layoutY="8.0" prefHeight="99.0" prefWidth="531.0" text="Motify" textFill="#1db954">
                <font>
                   <Font name="Calibri" size="84.0" />
                </font></Label>
          </children></Pane>
-      <VBox alignment="CENTER" layoutX="217.0" layoutY="129.0" prefHeight="392.0" prefWidth="484.0">
+      <VBox alignment="CENTER" layoutX="281.0" layoutY="130.0" prefHeight="392.0" prefWidth="484.0">
          <children>
             <Label id="loginSignUp" alignment="CENTER" prefHeight="71.0" prefWidth="247.0" text="Login" textFill="#1db954">
                <font>
@@ -46,6 +46,6 @@
                </font></Button>
          </children>
       </VBox>
-      <Button fx:id="whiteHome" layoutX="833.0" layoutY="550.0" mnemonicParsing="false" onAction="#switchSceneToMain" prefHeight="99.0" prefWidth="118.0" stylesheets="@sample.css" />
+      <Button fx:id="whiteHome" layoutX="927.0" layoutY="627.0" mnemonicParsing="false" onAction="#switchSceneToMain" prefHeight="99.0" prefWidth="118.0" stylesheets="@sample.css" />
    </children>
 </AnchorPane>
