@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="936.0" stylesheets="/sample/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.songsPageController">
+   <children>
+      <VBox layoutX="1.0" layoutY="3.0" prefHeight="625.0" prefWidth="935.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="688.0" prefWidth="935.0">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="userIdField" GridPane.columnIndex="1" />
+                  <TextField fx:id="itemField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="givenQuantityField" prefHeight="25.0" prefWidth="280.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="userButton" mnemonicParsing="false" prefHeight="159.0" prefWidth="256.0" />
+                  <Button id="home" mnemonicParsing="false" onAction="#switchSceneToMain" prefHeight="102.0" prefWidth="143.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Button id="addButton" layoutX="34.0" layoutY="61.0" mnemonicParsing="false" onAction="#addMe" prefHeight="88.0" prefWidth="110.0" />
+                        <Button id="subtractButton" layoutX="168.0" layoutY="61.0" mnemonicParsing="false" onAction="#updateMe" prefHeight="88.0" prefWidth="110.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

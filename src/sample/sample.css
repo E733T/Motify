@@ -1,0 +1,95 @@
+.root {
+    -fx-background-color: #1db954;
+}
+.label {
+    /*-fx-alignment: center;*/
+    /*-fx-text-alignment: center;*/
+    /*-fx-font-size: 80;*/
+}
+
+.menu-bar {
+    -fx-background-color: 	#1db954;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.button{
+    /*-fx-background-size: 100% 100%;*/
+    /*-fx-background-repeat: no-repeat;*/
+    /*-fx-background-color: transparent;*/
+}
+
+#needButton{
+    -fx-background-image: url("../images/raisehand.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+#userButton{
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/person.png");
+}
+
+#giveButton{
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/shoppingCart.png");
+}
+
+#amountButton{
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/counter.png");
+}
+
+#submit{
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/submit.png");
+}
+
+#home {
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    /*-fx-background-color: transparent;*/
+    -fx-background-image: url("../images/home.png");
+}
+
+#inventory {
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    /*-fx-background-color: transparent;*/
+    -fx-background-image: url("../images/inventory.png");
+}
+
+#addButton {
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    /*-fx-background-color: transparent;*/
+    -fx-background-image: url("../images/add.png");
+}
+
+#subtractButton {
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    /*-fx-background-color: transparent;*/
+    -fx-background-image: url("../images/subtract.png");
+}
