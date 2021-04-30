@@ -35,9 +35,18 @@ public class SignUpController {
         window.show();
     }
 
-    public void scanFile(ActionEvent event) throws IOException {
-        String s1 = field1.getText().toString();
-        field2.setText(Model.getNumberOfItemsInInventory(s1));
+    public void signIn(ActionEvent event) throws IOException {
+        String userId = field1.getText().toString();
+        String password = field2.getText().toString();
+        field1.clear();
+        field2.clear();
+        boolean tf = Model.addUser(userId, password);
+        if (tf) {
+            mainPane = FXMLLoader.load(getClass().getResource("../view/songsPage.fxml"));
+            Scene scene = new Scene(mainPane);
+            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+        }
     }
-
 }

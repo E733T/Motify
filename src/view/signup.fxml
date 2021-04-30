@@ -27,7 +27,7 @@
                                 <Font name="Arial" size="16.0" />
                             </font>
                         </Label>
-                        <TextField id="field1" fx:id="field2" alignment="CENTER" />
+                        <TextField id="field1" fx:id="field1" alignment="CENTER" />
                     </children>
                 </HBox>
                 <HBox alignment="CENTER" layoutX="10.0" layoutY="102.0" prefHeight="57.0" prefWidth="484.0">
@@ -37,10 +37,10 @@
                                 <Font name="Arial" size="16.0" />
                             </font>
                         </Label>
-                  <PasswordField id="field2" />
+                  <PasswordField id="field2" fx:id="field2" />
                     </children>
                 </HBox>
-                <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#scanFile" prefHeight="40.0" prefWidth="100.0" text="Submit">
+                <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#signIn" prefHeight="40.0" prefWidth="100.0" text="Submit">
                     <font>
                         <Font size="20.0" />
                     </font></Button>

@@ -5,8 +5,6 @@ import javafx.scene.control.Alert;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Properties;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Model {
     private static HashMap<String, String> h1 = new HashMap<String,String>();

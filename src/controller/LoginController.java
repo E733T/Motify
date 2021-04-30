@@ -49,9 +49,4 @@ public class LoginController {
         window.setScene(scene);
         window.show();
     }
-
-    public void scanFile(ActionEvent event) throws IOException {
-        String s1 = field1.getText().toString();
-        field2.setText(Model.getNumberOfItemsInInventory(s1));
-    }
 }
