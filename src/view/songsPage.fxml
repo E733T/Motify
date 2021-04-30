@@ -6,41 +6,15 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="936.0" stylesheets="/view/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.songsPageController">
    <children>
-      <VBox layoutX="1.0" layoutY="3.0" prefHeight="625.0" prefWidth="935.0">
+      <AnchorPane prefHeight="109.0" prefWidth="936.0" style="-fx-background-color: #535353;">
          <children>
-            <GridPane alignment="CENTER" prefHeight="688.0" prefWidth="935.0">
-              <columnConstraints>
-                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TextField fx:id="songField" GridPane.columnIndex="1" />
-                  <TextField fx:id="itemField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button id="home" mnemonicParsing="false" onAction="#switchSceneToMain" prefHeight="102.0" prefWidth="143.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-                     <children>
-                        <Button id="addButton" layoutX="101.0" layoutY="61.0" mnemonicParsing="false" onAction="#addMe" prefHeight="88.0" prefWidth="110.0" />
-                     </children>
-                  </Pane>
-                  <Label prefHeight="26.0" prefWidth="240.0" text="Song Name:">
-                     <font>
-                        <Font name="Arial" size="35.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="46.0" layoutY="101.0" prefHeight="26.0" prefWidth="240.0" text="Album Name:" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="35.0" />
-                     </font>
-                  </Label>
-               </children>
-            </GridPane>
+            <Label alignment="CENTER" layoutX="235.0" layoutY="27.0" prefHeight="55.0" prefWidth="466.0" text="Your song list" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
          </children>
-      </VBox>
+      </AnchorPane>
    </children>
+   <Button fx:id="whiteHome" layoutX="833.0" layoutY="550.0" mnemonicParsing="false" onAction="#switchSceneToMain" prefHeight="99.0" prefWidth="118.0" stylesheets="@sample.css" />
 </AnchorPane>

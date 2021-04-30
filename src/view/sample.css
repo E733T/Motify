@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: #1db954;
+    -fx-background-color: #212121;
 }
 .label {
     /*-fx-alignment: center;*/
@@ -7,8 +7,13 @@
     /*-fx-font-size: 80;*/
 }
 
+#submit {
+    /*-fx-background-color: #535353;*/
+}
+
+
 .menu-bar {
-    -fx-background-color: 	#1db954;
+    /*-fx-background-color: 	#1db954;*/
 }
 
 .text-field {
@@ -21,61 +26,31 @@
     -fx-background-color: -fx-focus-color, -fx-background ;
 }
 
-.button{
-    /*-fx-background-size: 100% 100%;*/
-    /*-fx-background-repeat: no-repeat;*/
-    /*-fx-background-color: transparent;*/
-}
-
-#needButton{
-    -fx-background-image: url("../model/images/raisehand.png");
-    -fx-background-size: 100% 100%;
-    -fx-background-repeat: no-repeat;
-    -fx-background-color: transparent;
-}
-
-#userButton{
-    -fx-background-size: 100% 100%;
-    -fx-background-repeat: no-repeat;
-    -fx-background-color: transparent;
-    -fx-background-image: url("../model/images/person.png");
-}
+/*.button{*/
+/*    !*-fx-background-size: 100% 100%;*!*/
+/*    !*-fx-background-repeat: no-repeat;*!*/
+/*    !*-fx-background-color: transparent;*!*/
+/*}*/
 
 #giveButton{
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../model/images/shoppingCart.png");
+    /*-fx-background-image: url("../model/images/shoppingCart.png");*/
 }
 
-#amountButton{
+#whiteHome {
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../model/images/counter.png");
+    -fx-background-image: url("../model/images/white-home-icon.png");
 }
 
-#submit{
+#blackHome {
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-image: url("../model/images/submit.png");
-}
-
-#home {
-    -fx-background-size: 100% 100%;
-    -fx-background-repeat: no-repeat;
-    -fx-background-color: transparent;
-    /*-fx-background-color: transparent;*/
-    -fx-background-image: url("../model/images/home.png");
-}
-
-#inventory {
-    -fx-background-size: 100% 100%;
-    -fx-background-repeat: no-repeat;
-    -fx-background-color: transparent;
-    /*-fx-background-color: transparent;*/
-    -fx-background-image: url("../model/images/inventory.png");
+    -fx-background-image: url("../model/images/black-home-icon.png");
 }
 
 #addButton {
