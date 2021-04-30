@@ -28,20 +28,6 @@ public class Model {
             return false;
         }
 
-        Pattern pattern = Pattern.compile("[a-zA-Z]{3}[0-9]{3}", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(user);
-        boolean matchFound = matcher.find();
-        if(matchFound) {
-            System.out.println("Match found");
-        } else {
-            System.out.println("Match not found");
-            Alert error=new Alert(Alert.AlertType.ERROR);
-            error.setTitle("Error message");
-            error.setHeaderText("User ID is not in the correct format!");
-            error.setContentText("Please, try again!");
-            error.showAndWait();
-            return false;
-        }
         users.put(user, password);
 
         userProperties.putAll(users);
@@ -72,7 +58,7 @@ public class Model {
             error.showAndWait();
         } else {
             int oldValue=0, newValue=0;
-            properties.load(new FileInputStream("inventory.properties"));
+            properties.load(new FileInputStream("songs.properties"));
             for (String keys:properties.stringPropertyNames()){
                 inventory.put(keys, properties.get(keys).toString());
             }
@@ -88,7 +74,7 @@ public class Model {
                 h1.put(key,value);
             }
             properties.putAll(h1);
-            FileOutputStream file = new FileOutputStream("inventory.properties",true);
+            FileOutputStream file = new FileOutputStream("songs.properties",true);
             properties.store(file, null);
         }
 
@@ -105,7 +91,7 @@ public class Model {
             error.showAndWait();
         } else {
             int oldValue=0, newValue=0;
-            properties.load(new FileInputStream("inventory.properties"));
+            properties.load(new FileInputStream("songs.properties"));
             for (String keys:properties.stringPropertyNames()){
                 inventory.put(keys, properties.get(keys).toString());
             }
@@ -117,7 +103,7 @@ public class Model {
                 System.out.println(newValue);
             }
             properties.putAll(h1);
-            FileOutputStream file = new FileOutputStream("inventory.properties",true);
+            FileOutputStream file = new FileOutputStream("songs.properties",true);
             properties.store(file, null);
         }
         return Integer.parseInt(value);
@@ -133,7 +119,7 @@ public class Model {
 //            error.showAndWait();
         } else {
 //            int oldValue=0, newValue=0;
-            properties.load(new FileInputStream("inventory.properties"));
+            properties.load(new FileInputStream("songs.properties"));
             for (String keys:properties.stringPropertyNames()){
                 inventory.put(keys, properties.get(keys).toString());
             }
@@ -148,7 +134,7 @@ public class Model {
                 return String.valueOf(Integer.parseInt(inventory.get(key)));
             }
 //            properties.putAll(h1);
-//            FileOutputStream file = new FileOutputStream("inventory.properties",true);
+//            FileOutputStream file = new FileOutputStream("songs.properties",true);
 //            properties.store(file, null);
         }
 

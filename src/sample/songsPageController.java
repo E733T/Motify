@@ -18,9 +18,8 @@ public class songsPageController<e> {
     public Button needButton;
     public Button giveButton;
     public Button submit;
-    public TextField userIdField;
-    public TextField itemField;
-    public TextField givenQuantityField;
+    public TextField songField;
+    public TextField albumField;
 
     public void saySomething(ActionEvent actionEvent) {
 
@@ -31,8 +30,8 @@ public class songsPageController<e> {
 
 //        Optional<ButtonType> result = alert.showAndWait();
 //        if (result.get() == ButtonType.OK){
-//            userIdField.clear();
-//            itemField.clear();
+//            songField.clear();
+//            albumField.clear();
 //            givenQuantityField.clear();
 //
 //        }
@@ -55,36 +54,32 @@ public class songsPageController<e> {
     HashMap<String, String> h1=new HashMap<String, String>();
 
     public void addMe(ActionEvent event) throws IOException {
-        String key=itemField.getText().toString();
-        String value=givenQuantityField.getText().toString();
-        String userId = userIdField.getText().toString();
-        Model.addItem(key,value);
+        String key=albumField.getText().toString();
+        String song = songField.getText().toString();
+        Model.addItem(key,song);
 //        Model.addUser(userId, );
-        itemField.clear();
-        givenQuantityField.clear();
-        userIdField.clear();
+        albumField.clear();
+        songField.clear();
 
     }
     public void updateMe(ActionEvent event ) throws IOException {
-        String key=itemField.getText().toString();
-        String value=givenQuantityField.getText().toString();
-        String userId=userIdField.getText().toString();
-        Model.subtractItem(key, value);
-        itemField.clear();
-        givenQuantityField.clear();
-        userIdField.clear();
+        String key=albumField.getText().toString();
+//        String value=givenQuantityField.getText().toString();
+        String userId= songField.getText().toString();
+//        Model.subtractItem(key, value);
+        albumField.clear();
+        songField.clear();
 
     }
 
     public void addQuantity(ActionEvent event) throws IOException {
 
-        String item = itemField.getText().toString();
-        String givenQuantity = givenQuantityField.getText().toString();
+        String item = albumField.getText().toString();
+//        String givenQuantity = givenQuantityField.getText().toString();
         File f = new File(getClass().getResource("inventory.txt").getFile());
 
-        userIdField.clear();
-        itemField.clear();
-        givenQuantityField.clear();
+        songField.clear();
+        albumField.clear();
 
         File temp;
 
@@ -101,7 +96,7 @@ public class songsPageController<e> {
             values[1] = values[1].trim();
 //            System.out.println("Values[0] ==> " + values[0]);
             if ((values[0].toLowerCase()).equals(item.toLowerCase())){
-                values[1] = new String(String.valueOf(Integer.parseInt(values[1]) + Integer.parseInt(givenQuantity)));
+//                values[1] = new String(String.valueOf(Integer.parseInt(values[1]) + Integer.parseInt(givenQuantity)));
 //                System.out.println("New quantity ===> " + values[1]);
                 String joined = String.join(",",values);
 //                System.out.println(joined);
@@ -135,13 +130,12 @@ public class songsPageController<e> {
     }
 
     public void subtractQuantity(ActionEvent event) throws IOException {
-        String item = itemField.getText().toString();
-        String givenQuantity = givenQuantityField.getText().toString();
+        String item = albumField.getText().toString();
+//        String givenQuantity = givenQuantityField.getText().toString();
         File f = new File(getClass().getResource("inventory.txt").getFile());
 
-        userIdField.clear();
-        itemField.clear();
-        givenQuantityField.clear();
+        songField.clear();
+        albumField.clear();
         File temp;
 
         temp = File.createTempFile("myTempFile", ".txt");
@@ -162,7 +156,7 @@ public class songsPageController<e> {
 //            System.out.println("Values[0] ==> " + values[0]);
             if ((values[0].toLowerCase()).equals(item.toLowerCase())){
 //                System.out.print("IN HERE\n");
-                values[1] = new String(String.valueOf(Integer.parseInt(values[1]) - Integer.parseInt(givenQuantity)));
+//                values[1] = new String(String.valueOf(Integer.parseInt(values[1]) - Integer.parseInt(givenQuantity)));
 //                System.out.println("New quantity ===> " + values[1]);
                 String joined = String.join(",",values);
 //                System.out.println(joined);

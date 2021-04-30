@@ -8,6 +8,8 @@ Currently you are able to signup and login. It allows you to create lists of you
 
 ## Known Bugs
 - Logging in will still Sign up a new user, and vice versa, signing up will login an existing user.
+    ### To do:
+    - Make query page
 
 ## Login info
 
