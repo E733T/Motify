@@ -36,7 +36,7 @@ public class Model {
             inventory.put(keys, userProperties.get(keys).toString());
         }
         if (inventory.containsKey(user)){
-            System.out.println("That user already exists, exiting");
+//            System.out.println("That user already exists, exiting");
             return true;
         }
 
