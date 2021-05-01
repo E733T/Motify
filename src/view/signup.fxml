@@ -40,7 +40,7 @@
                   <PasswordField id="field2" fx:id="field2" />
                     </children>
                 </HBox>
-                <Button id="submit" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signIn" prefHeight="40.0" prefWidth="100.0" text="Submit">
+                <Button id="submit" contentDisplay="CENTER" mnemonicParsing="false" onAction="#alertSignUp" prefHeight="40.0" prefWidth="100.0" text="Submit">
                     <font>
                         <Font size="20.0" />
                     </font></Button>

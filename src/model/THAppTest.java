@@ -29,25 +29,12 @@ public class THAppTest {
     }
 
     @org.junit.Test
-    public void addItem() throws IOException {
-        int expected =2;
-        int actual = Model.addItem("bread", "2");
-        assertEquals(expected, actual);
+    public void addSong() throws IOException {
+//        assertEquals(expected, actual);
     }
 
     @org.junit.Test
-    public void subtractItem() throws IOException {
-        int expected = 2;
-        int actual = Model.subtractItem("bread", "2");
-        assertEquals(expected, actual);
-    }
-
-    @org.junit.Test
-    public void getNumberOfItemsInInventory() throws IOException {
-        Model.addItem("test", "1");
-        String expected = "1";
-        String actual = Model.getNumberOfItemsInInventory("test");
-        Model.subtractItem("test", "1");
-        assertEquals(expected, actual);
+    public void deleteSong() throws IOException {
+//        assertEquals(expected, actual);
     }
 }

@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -12,6 +14,7 @@ import model.Model;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Optional;
 
 public class LoginController {
     private AnchorPane mainPane;
@@ -21,6 +24,21 @@ public class LoginController {
     private TextField field2;
 
     public LoginController() throws FileNotFoundException {
+    }
+
+
+    public void alertLogin(ActionEvent actionEvent) throws IOException {
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Logging into your account!");
+        alert.setHeaderText("Welcome back " + field1.getText().toString()+ "!");
+        alert.setContentText("Click the okay to continue to your songs list!");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK){
+            signIn(actionEvent);
+        }
+
     }
 
     public void signIn(ActionEvent event) throws IOException {
